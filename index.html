@@ -1,0 +1,70 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--description of student registration system-->
+      <!-- Objective:
+        Develop a student registration system where students can register their details such as name,
+        class, address, and contact number. Additionally, it provides functionalities for editing and
+         deleting records.-->
+    <!--header part-->
+    <header>
+        <div class="logo"><span>Doon</span>Academy</div>
+        <ul class="navlist">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#services">Services</a></li>
+         <li><a href="#skills">Skills</a></li>
+         <li><a href="#student-registration">registration Form</a></li>
+         <li><a href="#student details">student details</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+    <!--section part-->
+    <section id="Registration">
+         <div id="student-registration">
+     <!--student registration form-->
+               <form id="registration-form">
+                     <h1><div class="logo"><span>Student</span> Registration <span>Form</span></div></h1>
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name"><br><br>
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email"><br><br>
+                     <label for="rollno">Roll No:</label>
+                     <input type="number" id="rollno" name="rollno"><br><br>
+                     <label for="contactno">Contact No:</label>
+                     <input type="number" id="contactno" name="contactno"><br><br>
+                     <input type="submit" value="Register">
+                </form>
+         </div>
+         <div id="student details" >
+        <!--student table-->
+                <h2>Student Data</h2>
+                  <div style="overflow: scroll; height: 80px; width: 100%;overflow: auto">
+                       <table id="student-data">
+                              <thead>
+                                    <tr>
+                                       <th>Name</th>
+                                       <th>Email</th>
+                                       <th>Roll No</th>
+                                       <th>contactno</th>
+                                       <th>Action</th>
+                                    </tr>
+                              </thead>
+                              <tbody id="student-data-body">
+                                  <!-- student data will be displayed here -->
+                             </tbody>
+                       </table>
+                 </div>
+          </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
